@@ -1,8 +1,8 @@
-package pl.dawidgorecki.clamav;
+package pl.dawidgorecki.clamav.result;
 
 public enum ScanStatus {
     PASSED,
     FAILED,
     ERROR,
-    CONNECTION_ERROR;
+    CONNECTION_ERROR
 }
