@@ -159,7 +159,7 @@ public class ClamAVClient {
                         output.write(chunkSize);
                         output.write(buffer, 0, read);
 
-                        if (input.available() == 0) {
+                        if (input.available() > 0) {
                             // reply from server before scan command has been terminated
                             byte[] reply = input.readAllBytes();
                             throw new IOException("Scan command has been terminated. Reply from server: " +
