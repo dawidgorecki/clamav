@@ -7,8 +7,21 @@ check its status, and scan files or streams for viruses.
 - Send commands to check server status and retrieve the version.
 - Scan files and byte arrays for viruses.
 
-## Prerequisites
-- Java 17 or higher
+## Installation
+
+### Prerequisites
+- Java 11 or higher
+
+### Maven Dependency
+If you're using Maven, include the following dependency in your `pom.xml`:
+
+```xml
+<dependency>
+    <groupId>io.github.dawidgorecki</groupId>
+    <artifactId>clamav-client</artifactId>
+    <version>1.0.0</version>
+</dependency>
+```
 
 ## Usage
 
@@ -18,7 +31,7 @@ To create a client, instantiate the ClamAVClient with the ClamAV server's host a
 ClamAVClient client = new ClamAVClient("localhost", 3310);
 ```
 
-### Check Server Status
+### Check server status
 To check if the server is reachable, use the ping() method:
 ```java
 if (client.ping()) {
@@ -28,7 +41,7 @@ if (client.ping()) {
 }
 ```
 
-### Get ClamAV Version
+### Get version
 To retrieve the version of the ClamAV server:
 ```java
 String version = client.getVersion();
