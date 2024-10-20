@@ -8,11 +8,12 @@ check its status, and scan files or streams for viruses.
 - Scan files and byte arrays for viruses.
 
 ## Installation
+To use this library, you can clone the repository or include it in your project.
 
 ### Prerequisites
 - Java 11 or higher
 
-### Maven Dependency
+### Maven
 If you're using Maven, include the following dependency in your `pom.xml`:
 
 ```xml
