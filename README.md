@@ -1,3 +1,5 @@
+![GitHub Release](https://img.shields.io/github/v/release/dawidgorecki/clamav) ![GitHub License](https://img.shields.io/github/license/dawidgorecki/clamav)
+
 # Java ClamAV Client
 A Java client for interacting with a ClamAV antivirus server. This client allows you to send commands to the ClamAV server, 
 check its status, and scan files or streams for viruses.
